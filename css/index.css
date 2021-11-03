@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    border: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+.carousel img{
+    
+    object-fit:cover;
+    object-position: center;
+    height: 70vh;
+    overflow: hidden;
+    
+}
+
+img{
+    
+    height: 70vh;
+}
+nav{
+    background:rgba(0,0,0,0.2);
+    position: fixed;
+    top:0;
+}
+nav:hover
+{
+    background-color:rgba(213, 235, 232, 0.39);
+}
+
+
+.carousel-caption{
+    color: rgb(248, 247, 247);
+    /* position: absolute;
+    left: 0; */
+    width: 100%;
+    top: 27%;
+    margin-left:0%;
+    /* text-align: left; */
+    
+}
+.carousel-caption h1{
+    font-size: 5em;
+    font-family: 'Cookie', cursive;
+}
+.caph1{
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.caph2{
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.caph3{
+    margin-top: 15%;
+    margin-left: 30%;
+}
+.caph4{
+    margin-top: 15%;
+    margin-left: 30%;
+}
+.card{
+    border: 2px solid green ;
+    width: 18rem; 
+    height: 28em;
+    margin-left: 30px;
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    margin-left: 50px;
+    transition:0.5s ease;
+    cursor: pointer;
+}
+.card{
+    border: 2px solid green ;
+    width: 18rem; 
+    height: 28em;
+    margin-left: 30px;
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    margin-left: 50px;
+    transition:0.5s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+.card h5{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-style:bold,italic ;
+}
+.card p{
+    font-size: 15px;
+}
+
+    
+
+/* .card-img-top:hover{
+    transform: scale(1.8);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6)
+}
+ */
+footer{
+    margin-top: 100%;
+}

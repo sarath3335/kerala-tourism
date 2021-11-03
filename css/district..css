@@ -1,0 +1,113 @@
+
+*{
+margin: 0;
+border: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+
+nav{
+  background:rgba(129, 200, 162, 0.541);
+}
+nav:hover
+{
+  background-color:rgba(67, 187, 123, 0.452);
+}
+nav h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 60px;
+    font-style: italic;
+}
+nav h2:hover{
+    color:green;
+}
+
+/* .card{
+    opacity: 1;
+    margin-top: 20%;
+} */
+.card{
+   width: 18rem;
+    height: 30em; 
+    opacity: 1;
+    border: 2px solid green ;
+    margin-TOP: 15%;
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 40px;
+    margin-left: 50px;
+    transition:0.5s ease;
+    cursor: pointer;
+}
+
+
+.card img {
+    object-fit: cover;
+    object-position: center;
+    height: 40vh;
+    overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.6);
+}
+
+
+.card p{
+    font-family: 'Open Sans', sans-serif;
+    height: 150px;
+}
+.card img{
+    height: 300px;
+}
+#slide-bg{
+    width: 100%;
+    height: 150vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slidebg 30s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../images/1.jfif');
+    /* opacity: 0.5; */
+}
+@keyframes slidebg{
+    0%{
+        background-image: url('../images/2.jfif');
+        object-fit: contain;
+        object-position: center;
+    }
+    20%{
+        background-image: url('../images/3.jfif');
+        /* opacity: 0.5; */
+        object-fit: contain;
+        object-position: center;
+    }
+    40%{
+        background-image: url('../images/4.jfif');
+        /* opacity: 0.5; */
+        object-fit: contain;
+        object-position: center;
+    }
+    60%{
+        background-image: url('../images/5.jfif');
+        /* opacity: 0.5; */
+        object-fit: contain;
+        object-position: center;
+    }
+    80%{
+        background-image: url('../images/6.jfif');
+        /* opacity: 0.5; */
+        object-fit: contain;
+        object-position: center;
+    }
+    100%{
+        background-image: url('../images/8.jfif');
+        /* opacity: 0.5; */
+        object-fit: contain;
+        object-position: center;
+    }
+}
