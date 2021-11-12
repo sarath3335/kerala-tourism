@@ -1,10 +1,11 @@
 var su=document.getElementById("sname");
 var p1=document.getElementById("spswd1");
 var p2=document.getElementById("spswd2");
-var e1=document.getElementById("smail");
+var e1=document.getElementById("mail");
 var u=document.getElementById("update");
 var b=document.getElementById("button");
 var u1=document.getElementById("sname");
+var psw=document.getElementById("password");
 var regexp=/ ^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$ /;
 
 // function empty(){
@@ -63,7 +64,31 @@ function un()
         return true;
     }
 }
-     
+function email2()
+{
+    if( ( !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).test (e1.value))){
+        e1.style.border="2px solid red";
+        return false;
+    }
+    else{
+        return true;
+    }
+
+}
+
+function pswd2()
+{
+    if(psw.value.trim()=="" ){
+        psw.style.border="2px solid red";
+        return false;
+    }
+    else{
+        return true;
+    }
+
+}
+
+
      
 
 
